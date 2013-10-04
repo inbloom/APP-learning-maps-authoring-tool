@@ -1,0 +1,290 @@
+/**
+ ** CSS for all path-related elements
+ **
+ ******     *****
+ ****** TOC *****
+ ******     *****
+ **
+ ** @0 - Path Toolbar Styling
+ ** @1 - Path Styling
+ ** @2 - Skin mode styling
+ ** @3 - Context Menu
+ ** @4 - Popup info box
+ **
+ **/
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+
+/*
+ ** @0 - Path Toolbar
+ **/
+#path-toolbar-tmpl {
+  display: none;
+}
+
+.toolbar-item {
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px;
+}
+
+.toolbar-item span {
+  vertical-align: middle;
+}
+
+.toolbar-item-container {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.toolbar-item.toolbar-active {
+  background: #d0ecf5;
+}
+
+#open-path {
+  top: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  white-space: nowrap;
+}
+
+
+/*
+ ** @1 - Path Styling
+ **/
+#path-outer-container {
+  float: left;
+  position: relative;
+  margin-bottom: 24px;
+}
+#path-win {
+  margin: 20px;
+}
+.path-window-bar {
+  background: #d5d5d5;
+  border: 1px solid #c8c8c8;
+}
+.resize-handle {
+  cursor: se-resize;
+}
+svg {
+  border: 1px solid #c8c8c8;
+}
+tspan, #sample-node {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: default;
+  font-family: arial, sans-serif;
+
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*
+ * @2 Skin mode styles
+ */
+
+#skin-mode {
+  position: absolute;
+  background: white;
+  top: 70px;
+  right: -70px;
+  width: 800px;
+  height: 500px;
+  border: 1px solid #999;
+  box-shadow: 0px 0px 6px #999;
+  z-index: 1;
+  display: none;
+}
+#skin-header {
+  height: 100px;
+  width: 100%;
+  background: black;
+  position: relative;
+}
+#skin-title {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 23px;
+}
+#skin-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+.skin-button {
+  background: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 91px;
+  margin: 0 15px;
+  font-size: 18px;
+}
+#skin-content>div {
+  padding: 20px;
+}
+#skin-background label {
+  display: block;
+  text-align: center;
+}
+#background-upload {
+  margin: 10px;
+
+}
+
+#sample-node {
+  display: inline-block;
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 128px;
+  color: black;
+  background: #D0ECF5;
+}
+#sample-node-container {
+  text-align: center;
+}
+#skin-content {
+  text-align: center;
+}
+#skin-content h3 {
+  border-bottom: 1px solid black;
+}
+
+#node-color, #text-color {
+  margin: 15px;
+}
+
+/* 
+ * @3 Context Menu
+ */
+
+.ungroup {
+  display: none;
+}
+.group .ungroup {
+  display: block;
+}
+
+/* 
+ * @4 Popup info box
+ */
+#node-info {
+  position: absolute;
+  display: none;
+  top: 365px;
+  left: 430px;
+  background: #00FFFF;
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  border-bottom: 21px solid black;
+  padding: 8px 3px;
+}
+.x-button {
+  border: 1px solid white;
+  background: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  box-shadow: 0px 5px 8px rgb(100, 91, 91) inset;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+.node-info-title {
+  margin: 0 2px;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+}
+.node-info-desc {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+
+/* 
+ * Generic modal styles
+ */
+
+.modal-outer {
+  position: absolute;
+  background: white;
+  top: 70px;
+  right: -70px;
+  width: 800px;
+  height: 500px;
+  border: 1px solid #999;
+  box-shadow: 0px 0px 6px #999;
+  z-index: 1;
+  display: none;
+}
+.modal-header {
+  height: 100px;
+  width: 100%;
+  background: black;
+  position: relative;
+}
+.modal-title {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 23px;
+}
+.modal-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+.modal-button {
+  background: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 91px;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.modal-content>div {
+  padding: 20px;
+}
+.modal-background label {
+  display: block;
+  text-align: center;
+}
+
+.modal-content {
+  text-align: center;
+}
+.modal-content h3 {
+  border-bottom: 1px solid black;
+}

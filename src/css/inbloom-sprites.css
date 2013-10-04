@@ -1,0 +1,25 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:5a3937fe738aaf21f301e80be2f65158$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/toolbar-icons.png);}
+
+.undo {width:20px; height:20px; background-position: 0px 0px}
+.redo {width:20px; height:20px; background-position: -20px 0px}
+.breakpath {width:20px; height:20px; background-position: -60px 0px}
+.delete {width:20px; height:20px; background-position: -60px -20px}
+.dup {width:20px; height:20px; background-position: 0px -40px}
+.new {width:20px; height:20px; background-position: 0px -20px}
+.open {width:20px; height:20px; background-position: -20px -20px}
+.path {width:20px; height:20px; background-position: -40px 0px}
+.printer {width:20px; height:20px; background-position: -20px -40px}
+.save {width:20px; height:20px; background-position: -40px -20px}
+.select {width:20px; height:20px; background-position: -40px -40px}

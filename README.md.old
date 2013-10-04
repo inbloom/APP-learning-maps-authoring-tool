@@ -1,0 +1,76 @@
+# inBloom Learning Map Authoring Tool #
+
+## Description ##
+
+A Web Application Tool for reading, editing, creating, and publishing Standards, Paths, and Learning Maps.
+
+## Required Technologies ##
+
+* Apache
+* PHP5
+* Curl
+* PHP Curl library (package php5-curl for Ubuntu/Debian)
+
+## Pre-Install steps ##
+
+Configure Apache to be able to use PHP and restart server.
+
+## Installation ##
+
+Move the files in the ./src directory to Apache's Document Root or in a desired folder underneath.
+
+## Libraries Used ##
+
+### jQuery ###
+
+* Version: 1.10.2
+* License: MIT
+* URL: http://jquery.com/
+
+### jQuery-UI ###
+
+* Version: 1.10.3
+* License: MIT
+* URL: http://jqueryui.com/
+
+### Raphaël ###
+
+A JavaScript Library used for vector graphics.
+
+* Version: 2.1.0
+* License: MIT
+* URL: http://raphaeljs.com/
+* GitHub: https://github.com/DmitryBaranovskiy/raphael
+
+### jQuery Tree Widget ###
+
+A jQuery UI widget for building an HTML tree with checkboxes
+
+* License: MIT
+* GitHub: https://github.com/daredevel/jquery-tree 
+* Commit: 1aa20b90a91ffc63099d00fbc89182bf47a23202
+* Clean copy: ./external/jquery-tree
+* File used: ./src/js/lib/jquery-tree/jquery.tree.js
+
+The jQuery Tree Widget was modified to fit the requirements for the Learning Map Authoring Tool. This included adding
+functionality to get all checked elements from a tree as well as getting all checked leaves from a tree. The jQuery
+Tree Widget included a patch for a jQuery-UI bug which had already been fixed in a newer version of jQuery-UI so that
+patch was commented out. Lastly, multiple lines of code were removed from jquery.tree.js in an attempt to reduce the
+effect of a bug which caused the number of HTML elements within a parent element of a tree to grow exponentially with
+each child that was added to the parent.
+
+### Modernizr ###
+
+Used to redirect older browsers which would not be compatible.
+
+* Version: 2.6.2
+* License: MIT
+* URL: http://www.modernizr.com/
+
+### Spectrum ###
+
+A jQuery colorpicker.
+
+* Version: 1.1.1
+* License: MIT
+* URL: http://bgrins.github.io/spectrum/

@@ -1,0 +1,13 @@
+@media print {
+
+  #header, #standards-list, #path-toolbar, #footer, .resize-handle {
+    display:none;
+  }
+
+  .path-window-bar {
+    background: white;
+    border: 1px solid black;
+    color: black;
+  }
+
+}

@@ -1,0 +1,27 @@
+.tiny-context-menu {
+  position: absolute;
+  display: none;
+}
+
+
+
+.tiny-context-menu {
+  background: black;
+  color: white;
+  padding: 5px 0;
+  box-shadow: 2px 2px 8px #666;
+  z-index: 5;
+}
+
+.tiny-context-menu li {
+  list-style: none;
+  padding: 0;
+  text-shadow: 1px -1px 2px #000000;
+  padding: 2px 15px;
+  cursor: pointer;
+}
+
+.tiny-context-menu li:hover {
+  background: #3c97cc;
+}
+
