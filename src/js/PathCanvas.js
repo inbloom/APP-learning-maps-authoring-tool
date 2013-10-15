@@ -391,7 +391,13 @@ PathCanvas.prototype = {
       "move": cursorModeChanger,
       "path": cursorModeChanger,
       "breakpath": cursorModeChanger,
-      "new": function(){},
+      "new": function(){
+        var del = confirm("Opening a new path will close the current path and you will lose any unsaved changes.\nAre you sure?");
+        if(del){
+          pathCanvas.resetCanvas();
+        }
+        moveIcon.click();
+      },
       "open": function(){
         openMenu.show();
         moveIcon.click();
