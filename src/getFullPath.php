@@ -115,8 +115,8 @@ function getPathStep($id) {
 
 //$server = 'http://ec2-50-16-92-219.compute-1.amazonaws.com:8000';
 //$query = '/entity/search?opt{"cache":false}&q={"urn:lri:property_type:id":"' . $id . '"}';
-$server = 'http://ec2-54-211-165-17.compute-1.amazonaws.com:8080';
-$query = '/lri-reboot-0.1.0.BUILD-SNAPSHOT/learningmaps/' . $id;
+$server = 'http://localhost:8080';
+$query = '/lri-reboot/learningmaps/' . $id;
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);

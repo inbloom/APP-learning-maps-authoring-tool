@@ -122,7 +122,7 @@ HEAD;
       print<<<MAP
     </div>
     <div class="header-title">
-      LEARNING MAP AUTHORING TOOL v0.9.7
+      LEARNING MAP AUTHORING TOOL v0.9.8
     </div>
     <div class="pageBody">
     <div class="grade-bar">

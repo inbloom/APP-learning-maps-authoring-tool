@@ -18,7 +18,7 @@ print $data;
 
 function api_call($curl, $query) {
   $newData = array();
-  $base_url = 'http://ec2-54-211-165-17.compute-1.amazonaws.com:8080/lri-reboot-0.1.0.BUILD-SNAPSHOT/standards';
+  $base_url = 'http://localhost:8080/lri-reboot/standards';
   curl_setopt($curl, CURLOPT_URL, $base_url . $query);
   $data = curl_exec($curl);
   return $data;

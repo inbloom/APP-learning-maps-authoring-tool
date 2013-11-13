@@ -6,8 +6,8 @@ $learningPathJSON = $HTTP_RAW_POST_DATA;
 
 //$accessToken = $_GET['token'];
 
-$server = 'http://ec2-54-211-165-17.compute-1.amazonaws.com:8080';
-$query = '/lri-reboot-0.1.0.BUILD-SNAPSHOT/learningmaps';
+$server = 'http://localhost:8080';
+$query = '/lri-reboot/learningmaps';
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
