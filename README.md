@@ -15,9 +15,6 @@ The LMAT is a PHP application that runs under Apache. You'll need to have the fo
 To install, place the LMAT files in a folder accessible to Apache (e.g., under the Document Root or elsewhere). Edit the source to point to the Learning Resource Index server you want to connect to.
 
 ## CONTRIBUTING
-Interested in helping to improve the Learning Maps Authoring Tool? Great! You can take look at the backlog on our [Jira issue tracker](https://support.inbloom.org "Jira"). Browse existing issues, or contribute your own ideas for improvement and new features.
-
-Looking to interact with other developers interested in changing the future of education? Check out our [community forums](https://forums.inbloom.org/ "Forums"), and join the conversation!
 
 ## LICENSING
-The LMAT is licensed under the Apache License, Version 2.0. See LICENSE for full license text.
+The Learning Maps Authoring Tool is licensed under the Apache License, Version 2.0. See LICENSE for full license text.
